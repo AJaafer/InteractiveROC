@@ -32,7 +32,7 @@ r2<-randomForest(survived ~ ., data=ti_train)
 #rpart.plot(r1)
 
 # Generate predictions ----
-ti_test$pred1<-predict(r1, newdata=select(ti_test,-survived), type="prob")[,2]
+ti_test$pred1<-predict(r2, newdata=select(ti_test,-survived), type="prob")[,2]
 #p2<-predict(r2, data.matrix(select(ti_test,-survived)))
 
 # Plot ROC using pROC package ----
