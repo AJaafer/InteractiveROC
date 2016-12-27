@@ -8,6 +8,7 @@ library(rpart)
 library(rpart.plot)
 library(randomForest)
 library(pROC)
+library(rsconnect)
 
 # Read data ----
 titanic <- read_csv("titanic.csv")
